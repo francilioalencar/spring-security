@@ -28,12 +28,9 @@ public class UserController {
 
     @PostMapping
     public ResponseEntity efetuarLogin(@RequestBody UserLoginDto dados) {
-        System.out.println(dados);
+
         var authenticationToken = new UsernamePasswordAuthenticationToken(dados.name(), dados.password());
         var authentication = authenticate.authenticate(authenticationToken);
-
-        System.out.println( authentication.isAuthenticated() );
-
         var tokenJWT = tokenService.gerarToken((User) authentication.getPrincipal());
 
         return ResponseEntity.ok(new UserAuthenticate( Long.parseLong( tokenService.getSubject(tokenJWT).split(";")[1]), dados.name(), tokenJWT));
