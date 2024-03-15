@@ -16,11 +16,15 @@ Este é um projeto de demonstração destinado a mostrar a implementação e o u
 **Como Clonar o Projeto**
 
 Para clonar este projeto, siga estas etapas:
-Certifique-se de ter o Git instalado em sua máquina. Você pode baixá-lo e instalá-lo a partir do site oficial do Git.
+Certifique-se de ter o Git instalado em sua máquina. 
+
+Você pode baixá-lo e instalá-lo a partir do site oficial do Git.
+
 Abra seu terminal ou prompt de comando.
-Navegue até o diretório onde deseja armazenar o projeto clonado.
-Execute o seguinte comando:
- git clone https://github.com/francilioalencar/spring-security.git 
+
+Navegue até o diretório onde deseja armazenar o projeto.
+
+Execute o seguinte comando para clonar o projeto: _**git clone https://github.com/francilioalencar/spring-security.git**_
 
 Após a conclusão do processo, você terá uma cópia local do projeto em seu sistema.
 
@@ -34,7 +38,11 @@ Utilizando o Mysql,
 
 **Senha:** Senha@123
 
-Definir as permissões necessários para que as migrations executem
+Definir as permissões necessárias para que as migrations executem
+
+Após realizar o clone do projeto, navegue até o diretório raiz do projeto clonado
+
+Execute o seguinte comando para compilar e executar o projeto: _**./mvnw spring-boot:run**_
 
 Certifique-se de ter o JDK (Java Development Kit) instalado em sua máquina. Você pode baixá-lo e instalá-lo a partir do site oficial da Oracle ou de um distribuidor de JDK como o OpenJDK.
 No diretorio raiz do projeto, no terminal execute o comando: ./mvnw spring-boot:run
